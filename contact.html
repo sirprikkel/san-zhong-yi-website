@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact San Zhong Yi — Maak een afspraak via SMS of het contactformulier. Stationssingel 120 F, Ravenstein.">
+  <title>Contact — San Zhong Yi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{primary:'#7B8E6D',secondary:'#C4A882',cta:'#8B5CF6',bg:'#FAF8F5',txt:'#2D2A26',accent:'#7FBDBD'},fontFamily:{heading:['Lora','serif'],body:['Raleway','sans-serif']},borderRadius:{soft:'10px'},boxShadow:{soft:'0 2px 8px rgba(0,0,0,0.06)','soft-lg':'0 8px 24px rgba(0,0,0,0.08)'}}}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="2c05e2fc-19f2-4dcd-8935-0d9f32baca37"></script>
+  <style>body{font-family:'Raleway',sans-serif;color:#2D2A26;background:#FAF8F5}h1,h2,h3,h4,h5,h6{font-family:'Lora',serif}@media(prefers-reduced-motion:reduce){*{transition-duration:0ms!important}}</style>
+</head>
+<body>
+  <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-soft">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
+      <a href="index.html" class="flex items-center gap-3 cursor-pointer"><img src="images/logo.png" alt="San Zhong Yi logo" class="h-10 md:h-12 w-auto"><span class="font-heading text-lg md:text-xl font-semibold text-primary hidden sm:block">San Zhong Yi</span></a>
+      <div class="hidden md:flex items-center gap-6 font-body text-sm font-medium">
+        <a href="index.html" class="text-txt/70 hover:text-cta transition-colors duration-200 cursor-pointer">Home</a>
+        <a href="behandelingen.html" class="text-txt/70 hover:text-cta transition-colors duration-200 cursor-pointer">Behandelingen</a>
+        <a href="over-lisa.html" class="text-txt/70 hover:text-cta transition-colors duration-200 cursor-pointer">Over Lisa</a>
+        <a href="recensies.html" class="text-txt/70 hover:text-cta transition-colors duration-200 cursor-pointer">Recensies</a>
+        <a href="contact.html" class="bg-cta text-white px-5 py-2.5 rounded-soft font-semibold hover:opacity-90 transition-all duration-200 cursor-pointer">Contact</a>
+      </div>
+      <button id="menuBtn" class="md:hidden p-2 min-w-[44px] min-h-[44px] flex items-center justify-center cursor-pointer" aria-label="Menu"><svg class="w-6 h-6 text-txt" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100"><div class="px-4 py-4 flex flex-col gap-3"><a href="index.html" class="py-3 px-4 rounded-soft text-txt/70 hover:bg-gray-50 cursor-pointer">Home</a><a href="behandelingen.html" class="py-3 px-4 rounded-soft text-txt/70 hover:bg-gray-50 cursor-pointer">Behandelingen</a><a href="over-lisa.html" class="py-3 px-4 rounded-soft text-txt/70 hover:bg-gray-50 cursor-pointer">Over Lisa</a><a href="recensies.html" class="py-3 px-4 rounded-soft text-txt/70 hover:bg-gray-50 cursor-pointer">Recensies</a><a href="contact.html" class="py-3 px-4 rounded-soft bg-cta text-white text-center font-semibold cursor-pointer">Contact</a></div></div>
+  </nav>
+
+  <section class="pt-24 pb-8 md:pt-32 md:pb-12 bg-primary/5">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <h1 class="font-heading text-3xl md:text-5xl font-bold text-txt mb-4">Contact</h1>
+      <p class="text-txt/60 text-lg">Contact opnemen kan via SMS of het onderstaande formulier. U heeft geen verwijzing nodig.</p>
+    </div>
+  </section>
+
+  <section class="py-12 md:py-16">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Formulier -->
+        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-soft">
+          <h2 class="font-heading text-2xl font-bold text-txt mb-6">Stuur een bericht</h2>
+          <form action="mailto:info@san-zhong-yi.nl" method="post" enctype="text/plain" class="space-y-4">
+            <div>
+              <label for="naam" class="block text-sm font-medium text-txt/70 mb-1">Naam *</label>
+              <input type="text" id="naam" name="naam" required class="w-full px-4 py-3 border border-gray-200 rounded-soft text-sm focus:border-cta focus:ring-0 focus:outline-none focus:shadow-[0_0_0_3px_rgba(139,92,246,0.1)] transition-all duration-200" placeholder="Uw volledige naam">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-txt/70 mb-1">E-mail *</label>
+              <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-200 rounded-soft text-sm focus:border-cta focus:ring-0 focus:outline-none focus:shadow-[0_0_0_3px_rgba(139,92,246,0.1)] transition-all duration-200" placeholder="uw@email.nl">
+            </div>
+            <div>
+              <label for="telefoon" class="block text-sm font-medium text-txt/70 mb-1">Mobiel nr. *</label>
+              <input type="tel" id="telefoon" name="telefoon" required class="w-full px-4 py-3 border border-gray-200 rounded-soft text-sm focus:border-cta focus:ring-0 focus:outline-none focus:shadow-[0_0_0_3px_rgba(139,92,246,0.1)] transition-all duration-200" placeholder="06 12345678">
+            </div>
+            <div>
+              <label for="onderwerp" class="block text-sm font-medium text-txt/70 mb-1">Onderwerp *</label>
+              <select id="onderwerp" name="onderwerp" required class="w-full px-4 py-3 border border-gray-200 rounded-soft text-sm focus:border-cta focus:ring-0 focus:outline-none cursor-pointer bg-white">
+                <option value="">Selecteer...</option>
+                <option value="informatie">Informatie over behandelmogelijkheden</option>
+                <option value="eerste-consult">Eerste consult inplannen</option>
+                <option value="vervolg-consult">Vervolgconsult inplannen</option>
+                <option value="afspraak-verzetten">Afspraak verzetten</option>
+                <option value="overig">Overig</option>
+              </select>
+            </div>
+            <div>
+              <label for="bericht" class="block text-sm font-medium text-txt/70 mb-1">Bericht *</label>
+              <textarea id="bericht" name="bericht" rows="4" required class="w-full px-4 py-3 border border-gray-200 rounded-soft text-sm focus:border-cta focus:ring-0 focus:outline-none focus:shadow-[0_0_0_3px_rgba(139,92,246,0.1)] transition-all duration-200 resize-y" placeholder="Korte beschrijving van uw klacht of vraag..."></textarea>
+            </div>
+            <button type="submit" class="w-full bg-cta text-white py-3.5 rounded-soft font-semibold hover:opacity-90 transition-all duration-200 cursor-pointer min-h-[44px]">Versturen</button>
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div class="space-y-6">
+          <div class="bg-white rounded-2xl p-6 shadow-soft">
+            <h3 class="font-heading text-lg font-semibold text-txt mb-4">Contactgegevens</h3>
+            <ul class="space-y-4">
+              <li class="flex gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                <div>
+                  <p class="font-medium text-txt">Adres</p>
+                  <p class="text-txt/60 text-sm">Stationssingel 120 F<br>5371 BB Ravenstein (Noord-Brabant)</p>
+                </div>
+              </li>
+              <li class="flex gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                <div>
+                  <p class="font-medium text-txt">E-mail</p>
+                  <a href="mailto:info@san-zhong-yi.nl" class="text-cta text-sm hover:underline cursor-pointer">info@san-zhong-yi.nl</a>
+                </div>
+              </li>
+              <li class="flex gap-3">
+                <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                <div>
+                  <p class="font-medium text-txt">SMS</p>
+                  <a href="sms:+31612527898" class="text-cta text-sm hover:underline cursor-pointer">06 125 27 898</a>
+                  <p class="text-txt/40 text-xs mt-1">Contact bij voorkeur via SMS of e-mail</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow-soft">
+            <h3 class="font-heading text-lg font-semibold text-txt mb-4">Openingstijden</h3>
+            <ul class="space-y-2 text-sm">
+              <li class="flex justify-between"><span class="text-txt/70">Maandag</span><span class="text-txt font-medium">10:30–13:00 / 19:00–21:30</span></li>
+              <li class="flex justify-between"><span class="text-txt/70">Dinsdag</span><span class="text-txt font-medium">10:30–13:00 / 19:00–21:30</span></li>
+              <li class="flex justify-between"><span class="text-txt/70">Woensdag</span><span class="text-txt font-medium">10:30–13:00 / 19:00–21:30</span></li>
+              <li class="flex justify-between"><span class="text-txt/70">Donderdag</span><span class="text-txt font-medium">10:30–13:00 / 19:00–21:30</span></li>
+              <li class="flex justify-between"><span class="text-txt/70">Vrijdag</span><span class="text-txt font-medium">10:30–12:00</span></li>
+              <li class="flex justify-between"><span class="text-txt/70">Zaterdag</span><span class="text-txt font-medium">09:00–14:30</span></li>
+              <li class="flex justify-between"><span class="text-txt/70">Zondag</span><span class="text-txt/40">Gesloten</span></li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow-soft">
+            <h3 class="font-heading text-lg font-semibold text-txt mb-4">Praktische informatie</h3>
+            <ul class="space-y-2 text-sm text-txt/70">
+              <li>Neem uw medicijnen(kaart) mee naar het eerste consult</li>
+              <li>Annuleren tot 48 uur kosteloos; 24-48 uur: 50%; &lt;24 uur: 100%</li>
+              <li>Betaling contant of pin direct na het consult</li>
+              <li>Factuur wordt na de behandeling uitgeprint meegegeven</li>
+            </ul>
+          </div>
+
+          <a href="https://maps.google.com/?cid=7694355260415147358" target="_blank" rel="noopener" class="block bg-primary text-white rounded-2xl p-6 shadow-soft hover:opacity-90 transition-all duration-200 cursor-pointer text-center">
+            <svg class="w-8 h-8 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span class="font-heading font-semibold">Bekijk op Google Maps</span>
+            <p class="text-white/70 text-xs mt-1">Pal tegenover station Ravenstein</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-txt text-white/80 py-12">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div><div class="flex items-center gap-3 mb-4"><img src="images/logo.png" alt="San Zhong Yi" class="h-10 w-auto"><span class="font-heading text-lg font-semibold text-white">San Zhong Yi</span></div><p class="text-sm">Esoterisch Gezondheidscentrum</p></div>
+        <div><h4 class="font-heading font-semibold text-white mb-3">Pagina's</h4><ul class="space-y-2 text-sm"><li><a href="index.html" class="hover:text-white cursor-pointer">Home</a></li><li><a href="behandelingen.html" class="hover:text-white cursor-pointer">Behandelingen</a></li><li><a href="over-lisa.html" class="hover:text-white cursor-pointer">Over Lisa</a></li><li><a href="recensies.html" class="hover:text-white cursor-pointer">Recensies</a></li><li><a href="contact.html" class="hover:text-white cursor-pointer">Contact</a></li></ul></div>
+        <div><h4 class="font-heading font-semibold text-white mb-3">Contact</h4><ul class="space-y-2 text-sm"><li>Stationssingel 120 F, 5371 BB Ravenstein</li><li><a href="mailto:info@san-zhong-yi.nl" class="hover:text-white cursor-pointer">info@san-zhong-yi.nl</a></li><li><a href="sms:+31612527898" class="hover:text-white cursor-pointer">SMS: 06 125 27 898</a></li></ul></div>
+      </div>
+      <div class="border-t border-white/10 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40"><p>&copy; 2025 Lisa Seerden-Piëst</p><p>Gebouwd door <a href="https://www.code-lieshout.nl" class="hover:text-white cursor-pointer" target="_blank" rel="noopener">Code Lieshout</a></p></div>
+    </div>
+  </footer>
+  <script>document.getElementById('menuBtn').addEventListener('click',()=>{document.getElementById('mobileMenu').classList.toggle('hidden')})</script>
+</body>
+</html>

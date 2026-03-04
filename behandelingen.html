@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Behandelingen en tarieven van San Zhong Yi — Acupunctuur, Shiatsu, Tui Na, Cupping, Moxa, GuaSha, Crystal Healing en meer.">
+  <title>Behandelingen & Tarieven — San Zhong Yi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { primary: '#7B8E6D', secondary: '#C4A882', cta: '#8B5CF6', bg: '#FAF8F5', txt: '#2D2A26', accent: '#7FBDBD' },
+        fontFamily: { heading: ['Lora','serif'], body: ['Raleway','sans-serif'] },
+        borderRadius: { soft: '10px' },
+        boxShadow: { soft: '0 2px 8px rgba(0,0,0,0.06)', 'soft-lg': '0 8px 24px rgba(0,0,0,0.08)' }
+      }}
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="2c05e2fc-19f2-4dcd-8935-0d9f32baca37"></script>
+  <style>
+    body { font-family: 'Raleway', sans-serif; color: #2D2A26; background: #FAF8F5; }
+    h1,h2,h3,h4,h5,h6 { font-family: 'Lora', serif; }
+    @media (prefers-reduced-motion: reduce) { * { transition-duration: 0ms !important; } }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-soft">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
+      <a href="index.html" class="flex items-center gap-3 cursor-pointer">
+        <img src="images/logo.png" alt="San Zhong Yi logo" class="h-10 md:h-12 w-auto">
+        <span class="font-heading text-lg md:text-xl font-semibold text-primary hidden sm:block">San Zhong Yi</span>
+      </a>
+      <div class="hidden md:flex items-center gap-6 font-body text-sm font-medium">
+        <a href="index.html" class="text-txt/70 hover:text-cta transition-colors duration-200 cursor-pointer">Home</a>
+        <a href="behandelingen.html" class="text-primary hover:text-cta transition-colors duration-200 cursor-pointer">Behandelingen</a>
+        <a href="over-lisa.html" class="text-txt/70 hover:text-cta transition-colors duration-200 cursor-pointer">Over Lisa</a>
+        <a href="recensies.html" class="text-txt/70 hover:text-cta transition-colors duration-200 cursor-pointer">Recensies</a>
+        <a href="contact.html" class="bg-cta text-white px-5 py-2.5 rounded-soft font-semibold hover:opacity-90 transition-all duration-200 cursor-pointer">Contact</a>
+      </div>
+      <button id="menuBtn" class="md:hidden p-2 min-w-[44px] min-h-[44px] flex items-center justify-center cursor-pointer" aria-label="Menu">
+        <svg class="w-6 h-6 text-txt" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-soft-lg">
+      <div class="px-4 py-4 flex flex-col gap-3">
+        <a href="index.html" class="py-3 px-4 rounded-soft text-txt/70 hover:bg-gray-50 cursor-pointer">Home</a>
+        <a href="behandelingen.html" class="py-3 px-4 rounded-soft text-primary font-medium bg-primary/5 cursor-pointer">Behandelingen</a>
+        <a href="over-lisa.html" class="py-3 px-4 rounded-soft text-txt/70 hover:bg-gray-50 cursor-pointer">Over Lisa</a>
+        <a href="recensies.html" class="py-3 px-4 rounded-soft text-txt/70 hover:bg-gray-50 cursor-pointer">Recensies</a>
+        <a href="contact.html" class="py-3 px-4 rounded-soft bg-cta text-white text-center font-semibold cursor-pointer">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-24 pb-12 md:pt-32 md:pb-16 bg-primary/5">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <h1 class="font-heading text-3xl md:text-5xl font-bold text-txt mb-4">Behandelingen & Tarieven</h1>
+      <p class="text-txt/60 text-lg max-w-3xl">Traditionele Chinese Geneeswijzen, spirituele healing en meer. Alle behandelingen kunnen (gedeeltelijk) vergoed worden vanuit de aanvullende zorgpolis.</p>
+    </div>
+  </section>
+
+  <!-- Behandelingen -->
+  <section class="py-12 md:py-16">
+    <div class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 space-y-8">
+
+      <!-- Little Treasures -->
+      <div class="bg-white rounded-2xl p-6 md:p-8 shadow-soft">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-accent/20 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <div class="flex-1">
+            <h2 class="font-heading text-2xl font-bold text-txt mb-1">Little Treasures <span class="text-base font-normal text-txt/50">(kinderen t/m 12 jaar)</span></h2>
+            <div class="flex flex-wrap gap-4 mt-3 mb-4">
+              <div class="bg-bg rounded-soft px-4 py-2">
+                <div class="text-sm text-txt/50">Eerste consult</div>
+                <div class="font-heading text-xl font-bold text-primary">€77,50</div>
+                <div class="text-xs text-txt/40">45-60 min</div>
+              </div>
+              <div class="bg-bg rounded-soft px-4 py-2">
+                <div class="text-sm text-txt/50">Vervolgconsult</div>
+                <div class="font-heading text-xl font-bold text-primary">€62,50</div>
+                <div class="text-xs text-txt/40">30-45 min</div>
+              </div>
+            </div>
+            <p class="text-txt/70 text-sm leading-relaxed">Combinatie van Shiatsu, Tui Na Fa en Acupunctuur. Kinderen kunnen geholpen worden bij angsten, allergieën, slaapproblemen, lichamelijke ongemakken, bedplassen en spijsverteringsproblemen. Waar nodig extra ondersteuning d.m.v. Chinese Kruiden, Cupping, Gua Sha, Moxa en/of Crystal Grids.</p>
+            <p class="text-txt/50 text-xs mt-3">Toestemming van beide ouders/verzorgers nodig voor kinderen t/m 16 jaar. Ouders zijn welkom bij de behandeling.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Eerste Consult -->
+      <div class="bg-white rounded-2xl p-6 md:p-8 shadow-soft border-2 border-cta/20">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-cta/10 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-cta" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
+          </div>
+          <div class="flex-1">
+            <div class="flex items-center gap-2 mb-1">
+              <h2 class="font-heading text-2xl font-bold text-txt">Eerste Consult</h2>
+              <span class="bg-cta/10 text-cta text-xs font-semibold px-2 py-0.5 rounded-full">Aanbevolen start</span>
+            </div>
+            <div class="flex flex-wrap gap-4 mt-3 mb-4">
+              <div class="bg-bg rounded-soft px-4 py-2">
+                <div class="font-heading text-xl font-bold text-primary">€145,-</div>
+                <div class="text-xs text-txt/40">90-120 min</div>
+              </div>
+            </div>
+            <p class="text-txt/70 text-sm leading-relaxed">Anamnese, diagnose, behandelmethode en behandelplan. Kennismakingsgesprek en diagnose via polsdiagnose, tongdiagnose en anamnese. Het intakeformulier ontvangt u per e-mail na het inplannen. Jaarlijkse massagestop van week 25 t/m week 38.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Systemic Balance -->
+      <div class="bg-white rounded-2xl p-6 md:p-8 shadow-soft">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <div class="flex-1">
+            <h2 class="font-heading text-2xl font-bold text-txt mb-1">Systemic Balance</h2>
+            <div class="flex flex-wrap gap-4 mt-3 mb-4">
+              <div class="bg-bg rounded-soft px-4 py-2">
+                <div class="font-heading text-xl font-bold text-primary">€77,50</div>
+                <div class="text-xs text-txt/40">45-60 min</div>
+              </div>
+            </div>
+            <p class="text-txt/70 text-sm leading-relaxed">Snelle en effectieve vermindering van emotionele, hormonale, functionele klachten en acute of chronische pijnklachten via de Dr. Tan Balance Method Acupuncture. Extra ongemak behandelen: +30 min, meerprijs €32,50.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Esoteric Harmony -->
+      <div class="bg-white rounded-2xl p-6 md:p-8 shadow-soft">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+          </div>
+          <div class="flex-1">
+            <h2 class="font-heading text-2xl font-bold text-txt mb-1">Esoteric Harmony</h2>
+            <div class="flex flex-wrap gap-4 mt-3 mb-4">
+              <div class="bg-bg rounded-soft px-4 py-2">
+                <div class="font-heading text-xl font-bold text-primary">€110,-</div>
+                <div class="text-xs text-txt/40">75-90 min</div>
+              </div>
+            </div>
+            <p class="text-txt/70 text-sm leading-relaxed">Uitgebreid consult met esoterische acupunctuur, klassieke Chinese acupunctuur, Dr. Tan Balance Method, I Ching, Yi Jing, Wu Xing en oor-acupunctuur in combinatie met Shiatsu en Tui Na Fa. Inclusief Cupping, GuaSha, Moxa en Spirituele Coaching. Jaarlijkse massagestop week 25-38.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Physical Relief -->
+      <div class="bg-white rounded-2xl p-6 md:p-8 shadow-soft">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"/></svg>
+          </div>
+          <div class="flex-1">
+            <h2 class="font-heading text-2xl font-bold text-txt mb-1">Physical Relief</h2>
+            <div class="flex flex-wrap gap-4 mt-3 mb-4">
+              <div class="bg-bg rounded-soft px-4 py-2">
+                <div class="font-heading text-xl font-bold text-primary">€77,50</div>
+                <div class="text-xs text-txt/40">30-45 min</div>
+              </div>
+            </div>
+            <p class="text-txt/70 text-sm leading-relaxed">Klachtgerichte combinatie van Tui Na Fa en Shiatsu. Focus op het aangedane gedeelte van het lichaam. Bij hoofdpijn: rug, schouders, nek, hoofd en gezicht. Bij rugpijn: rug, schouders, benen en voeten. Massagestop week 25-38.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Physical Awareness -->
+      <div class="bg-white rounded-2xl p-6 md:p-8 shadow-soft">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-accent/20 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div class="flex-1">
+            <h2 class="font-heading text-2xl font-bold text-txt mb-1">Physical Awareness</h2>
+            <div class="flex flex-wrap gap-4 mt-3 mb-4">
+              <div class="bg-bg rounded-soft px-4 py-2">
+                <div class="font-heading text-xl font-bold text-primary">€110,-</div>
+                <div class="text-xs text-txt/40">45-60 min</div>
+              </div>
+            </div>
+            <p class="text-txt/70 text-sm leading-relaxed">Behandeling van het gehele lichaam: hoofd, gezicht, nek, schouders, armen, handen, borst, buik, rug, heupen, benen en voeten. Zorgt voor meer lichaamsbewustzijn, verlichting van pijn en emotionele balans. Massagestop week 25-38.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sacred Crystals -->
+      <div class="bg-white rounded-2xl p-6 md:p-8 shadow-soft">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-cta/10 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-cta" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+          </div>
+          <div class="flex-1">
+            <h2 class="font-heading text-2xl font-bold text-txt mb-1">Sacred Crystals</h2>
+            <div class="flex flex-wrap gap-4 mt-3 mb-4">
+              <div class="bg-bg rounded-soft px-4 py-2">
+                <div class="font-heading text-xl font-bold text-primary">€77,50</div>
+                <div class="text-xs text-txt/40">45-60 min</div>
+              </div>
+            </div>
+            <p class="text-txt/70 text-sm leading-relaxed">Kaartlegging en Crystal Grid met begeleide meditatie. Voor spirituele inzichten, relationele harmonisatie, levensdoel en innerlijk kind-healing. Komt niet in aanmerking voor vergoeding bij de zorgverzekeraar.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Witch's Way -->
+      <div class="bg-white rounded-2xl p-6 md:p-8 shadow-soft">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </div>
+          <div class="flex-1">
+            <h2 class="font-heading text-2xl font-bold text-txt mb-1">The Witch's Way</h2>
+            <div class="flex flex-wrap gap-4 mt-3 mb-4">
+              <div class="bg-bg rounded-soft px-4 py-2">
+                <div class="font-heading text-xl font-bold text-primary">€77,50</div>
+                <div class="text-xs text-txt/40">45-60 min</div>
+              </div>
+            </div>
+            <p class="text-txt/70 text-sm leading-relaxed">Kaartlegging, mediumschap en inzichtelijke reading. Voor levensvragen, spirituele inzichten, relationele harmonisatie, levensdoel en toekomstige keuzes. Komt niet in aanmerking voor vergoeding bij de zorgverzekeraar.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Acute Intervention -->
+      <div class="bg-white rounded-2xl p-6 md:p-8 shadow-soft">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <div class="flex-1">
+            <h2 class="font-heading text-2xl font-bold text-txt mb-1">Acute Intervention</h2>
+            <div class="flex flex-wrap gap-4 mt-3 mb-4">
+              <div class="bg-bg rounded-soft px-4 py-2">
+                <div class="font-heading text-xl font-bold text-primary">€30 – €55</div>
+                <div class="text-xs text-txt/40">20-40 min</div>
+              </div>
+            </div>
+            <p class="text-txt/70 text-sm leading-relaxed">Snelle en effectieve vermindering van acute pijnklachten via de Dr. Tan Balance Method Acupuncture. Geschikt voor de behandeling van één acute klacht.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Klachten overzicht -->
+  <section class="py-12 md:py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
+      <h2 class="font-heading text-2xl md:text-3xl font-bold text-txt mb-6">Waar kunt u terecht voor?</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="bg-bg rounded-xl p-4"><p class="text-sm text-txt/70">Luchtwegproblemen (sinusitis, hooikoorts, keelpijn)</p></div>
+        <div class="bg-bg rounded-xl p-4"><p class="text-sm text-txt/70">Spijsverteringsklachten (spastische darmen, obstipatie, maagzuur)</p></div>
+        <div class="bg-bg rounded-xl p-4"><p class="text-sm text-txt/70">Hormonale klachten (diabetes, PMS, schildklier)</p></div>
+        <div class="bg-bg rounded-xl p-4"><p class="text-sm text-txt/70">Urologische problemen (blaasontsteking, vruchtbaarheid)</p></div>
+        <div class="bg-bg rounded-xl p-4"><p class="text-sm text-txt/70">Pijnklachten (sportblessures, whiplash, migraine, RSI)</p></div>
+        <div class="bg-bg rounded-xl p-4"><p class="text-sm text-txt/70">Huidklachten (acne, eczeem, psoriasis)</p></div>
+        <div class="bg-bg rounded-xl p-4"><p class="text-sm text-txt/70">Zenuwproblematiek (neuropathie, facialis parese)</p></div>
+        <div class="bg-bg rounded-xl p-4"><p class="text-sm text-txt/70">Gynaecologische klachten (overgang, menstruatie, infertiliteit)</p></div>
+        <div class="bg-bg rounded-xl p-4"><p class="text-sm text-txt/70">Mentale klachten (depressie, slaapstoornissen, burn-out)</p></div>
+      </div>
+      <p class="text-txt/50 text-sm mt-4">Zit uw klacht er niet bij? <a href="contact.html" class="text-cta hover:underline cursor-pointer">Neem contact op</a>.</p>
+    </div>
+  </section>
+
+  <!-- Vergoeding -->
+  <section class="py-12 md:py-16 bg-bg">
+    <div class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
+      <h2 class="font-heading text-2xl md:text-3xl font-bold text-txt mb-4">Vergoeding</h2>
+      <p class="text-txt/70 leading-relaxed mb-4">De kosten voor behandelingen kunnen vanuit de aanvullende zorgpolis (gedeeltelijk) vergoed worden. U heeft geen verwijzing nodig. Neem contact op met uw zorgverzekeraar en vraag naar vergoedingen voor Alternatieve Geneeswijzen / Complementaire Zorg.</p>
+      <div class="bg-white rounded-xl p-5 shadow-soft">
+        <ul class="space-y-2 text-sm text-txt/70">
+          <li>Prestatiecode 24101 — Chinese Geneeswijzen</li>
+          <li>Prestatiecode 24102 — Shiatsu Massagetherapie</li>
+          <li>Prestatiecode 24103 — Overige Oosterse Geneeswijzen</li>
+          <li>Prestatiecode 24104 — Acupunctuur</li>
+          <li>Prestatiecode 24105 — Tui Na Massagetherapie</li>
+        </ul>
+        <p class="text-txt/50 text-xs mt-3">Meer informatie: <a href="https://www.zhong.nl/" class="text-cta hover:underline cursor-pointer" target="_blank" rel="noopener">www.zhong.nl</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-12 md:py-16 bg-cta">
+    <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+      <h2 class="font-heading text-2xl md:text-3xl font-bold text-white mb-4">Klaar om een afspraak te maken?</h2>
+      <p class="text-white/80 mb-6">Contact is mogelijk via SMS of het contactformulier.</p>
+      <a href="contact.html" class="bg-white text-cta px-8 py-3.5 rounded-soft font-semibold shadow-soft-lg hover:bg-white/90 transition-all duration-200 cursor-pointer min-h-[44px] inline-flex items-center">
+        Naar contactformulier
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-txt text-white/80 py-12">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="images/logo.png" alt="San Zhong Yi logo" class="h-10 w-auto">
+            <span class="font-heading text-lg font-semibold text-white">San Zhong Yi</span>
+          </div>
+          <p class="text-sm leading-relaxed">Esoterisch Gezondheidscentrum<br>Traditionele Chinese Geneeswijzen</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white mb-3">Pagina's</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Home</a></li>
+            <li><a href="behandelingen.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Behandelingen</a></li>
+            <li><a href="over-lisa.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Over Lisa</a></li>
+            <li><a href="recensies.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Recensies</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors duration-200 cursor-pointer">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white mb-3">Contact</h4>
+          <ul class="space-y-2 text-sm">
+            <li>Stationssingel 120 F</li>
+            <li>5371 BB Ravenstein (NB)</li>
+            <li><a href="mailto:info@san-zhong-yi.nl" class="hover:text-white cursor-pointer">info@san-zhong-yi.nl</a></li>
+            <li><a href="sms:+31612527898" class="hover:text-white cursor-pointer">SMS: 06 125 27 898</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+        <p>&copy; 2025 Lisa Seerden-Piëst — San Zhong Yi</p>
+        <p>Gebouwd door <a href="https://www.code-lieshout.nl" class="hover:text-white cursor-pointer" target="_blank" rel="noopener">Code Lieshout</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
